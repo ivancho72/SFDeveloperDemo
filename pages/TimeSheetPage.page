@@ -1,0 +1,99 @@
+<apex:page docType="html-5.0" showHeader="false" standardStylesheets="false" 
+			applyBodyTag="false" applyHtmlTag="false" cache="true">
+<html ng-app="TimesheetApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+    <title>Time Management - Timesheet entry Page</title>
+    <script type="text/javascript">
+    	var configFromEnv = {};
+    	configFromEnv.sessionId = "{!$API.session_Id}";
+    </script>
+    <link href="{!URLFOR($Resource.Theme_css)}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="{!URLFOR($Resource.ForceTk_js)}"></script>
+    <script src="{!URLFOR($Resource.TimeSheetApp_js)}"></script>
+    <script src="{!URLFOR($Resource.TimeSheetController_js)}"></script>
+</head>
+<body ng-controller="TimeSheetController">
+    <header class='navbar navbar-inverse'>
+        <div class='navbar-brand' role='banner'>
+            <h1>Time Management Application</h1>
+        </div>
+    </header>
+    <div class="container">
+		<form class="well form-vertical">
+            <div class="control-group">
+                <label class="control-label">Employee Name:</Label>
+                <select class="form-control" ng-model="employee" 
+                 ng-options="e.Name for e in employees" ng-change="selectEmployee()">
+                </select>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Week Reported:</label>
+                <select class="form-control" ng-model="week" ng-change="selectWeek()"
+                 ng-options="s.Start_Date__c + ' - ' + s.End_Date__c for s in schedWeeks">
+                </select>
+            </div>     
+        </form>
+        <div class="row">
+            <br></br>            
+        </div>
+        <form class="well">
+            <div class="span4">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<tr ng-repeat="week in itemReports">
+                    		<td>
+                                <select class="form-control" ng-model="week.selectedItem" 
+                                    ng-options="ti.Description__c for ti in timeItems">
+                                    <option>(none)</option>
+                                </select>
+                    		</td>
+                            <td ng-repeat="dayReport in week.WeekValues" style="max-width:65px;">                              
+                            	<input style="max-width:40px;" maxLength="2" class="form-control" type="number" ng-model="dayReport.Hours__c" required="" step="1" min="0" max="24" ngMaxLength="2"></input>
+                            </td>
+                            <td>
+                            	<button class='btn btn-xs' ng-click="deleteRow(week)">Delete</button>
+                            </td>
+                    	</tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                	<button class='btn btn-xs' ng-click="addRow()">Add Row</button>
+            </div>
+        </form>
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>                    
+            <div class="col-lg-4">                    
+                <button class='btn btn-primary' ng-click="save()">
+                    Save
+                </button>    
+            <div class="col-lg-4"></div>                    
+            </div>          
+        </div>
+        <div class="row">
+        </div>
+        <div class="row">
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</body>
+</html>
+</apex:page>

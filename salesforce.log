@@ -1,0 +1,69 @@
+[28/04/2014 00:32:11] ivancho72 - Salesforce Credentials Found for User 01f59239-9ab4-4f54-b3ae-0d46c580f7d2
+[28/04/2014 00:32:11] ivancho72 - Pull All Started...
+[28/04/2014 00:32:11] ivancho72 - Establishing connection to Salesforce...
+[28/04/2014 00:32:11] ivancho72 - Connected To Salesforce As Jorge Ivan Luna Lopez
+[28/04/2014 00:32:13] ivancho72 - 25 Apex Classes Found
+[28/04/2014 00:32:13] ivancho72 - 24 Apex Pages Found
+[28/04/2014 00:32:13] ivancho72 - 1 Apex Triggers Found
+[28/04/2014 00:32:13] ivancho72 - Pulling 50 Files
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/MyController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/TimeItemsRestService.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/ScheduleWeekRestService.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/TimeReportRestService.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/EmployeesRestService.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/SiteLoginController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/SiteLoginControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/SiteRegisterController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/SiteRegisterControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/ChangePasswordController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/ChangePasswordControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/ForgotPasswordController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/ForgotPasswordControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/MyProfilePageController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/MyProfilePageControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesLoginController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesLoginControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesLandingController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesLandingControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesSelfRegController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesSelfRegControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesSelfRegConfirmController.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/CommunitiesSelfRegConfirmControllerTest.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/TimeReportRestServiceTests.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File classes/ScheduleWeekTests.cls
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/AccountWithContacts.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/TimeSheetPage.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/SiteRegister.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/ChangePassword.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/ForgotPassword.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/SiteLogin.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/ForgotPasswordConfirm.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/SiteRegisterConfirm.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/MyProfilePage.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/StdExceptionTemplate.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/SiteTemplate.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/FileNotFound.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/BandwidthExceeded.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/Exception.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/InMaintenance.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/Unauthorized.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/UnderConstruction.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/IdeasHome.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/AnswersHome.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/CommunitiesTemplate.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/CommunitiesLogin.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/CommunitiesLanding.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/CommunitiesSelfReg.page
+[28/04/2014 00:32:13] ivancho72 - Updating File pages/CommunitiesSelfRegConfirm.page
+[28/04/2014 00:32:13] ivancho72 - Updating File triggers/SetEndDate.trigger
+[28/04/2014 00:32:13] ivancho72 - 50 Files Pulled from Salesforce.
+[28/04/2014 00:32:13] ivancho72 - Pull All Complete
+
+[28/04/2014 00:34:24] ivancho72 - Salesforce Credentials Found for User 01f59239-9ab4-4f54-b3ae-0d46c580f7d2
+[28/04/2014 00:34:24] ivancho72 - Pull Single File Started...
+[28/04/2014 00:34:24] ivancho72 - Pulling File SetEndDate.trigger
+[28/04/2014 00:34:24] ivancho72 - Establishing connection to Salesforce...
+[28/04/2014 00:34:24] ivancho72 - Connected To Salesforce As Jorge Ivan Luna Lopez
+[28/04/2014 00:34:24] ivancho72 - Updating File triggers/SetEndDate.trigger
+[28/04/2014 00:34:24] ivancho72 - Pull Single File Complete
+
